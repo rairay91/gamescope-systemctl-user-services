@@ -1,4 +1,4 @@
-# auto-run-any-software-in-the-background-in-gamescope-steam-game-mode
+# auto run any software in the background in gamescope-steam-game-mode/gamescope-session
 This is a short yet full guide about how to run any software in the background as soon as gamescope steam session start
 
 Note: This method should work with cachyos-hendheld, nobara-handheld or any other non-immutable handheld edition distro, for immutable distro might work if systemd can use per user services(which is possible, because this method create systemd service in users home directory). And this method somehow also launch sunshine in the background even when you go to the desktop mode(which is possible, because systemd is handling this task rather then desktop environment, which is a plus point).
