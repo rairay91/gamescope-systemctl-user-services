@@ -37,9 +37,8 @@ Note: If you want to disable it for some reason, simply type this command in ter
 
 -> now inside this file type this content
 Note: In ExecStart sunshine need to be replaced with proper run command if sunshine is install from flatpak
-Note: if you want service to wait for few seconds before start you need to uncomment the line with content "ExecStart=/bin/bash -c 'sleep 10 && sunshine'" and comment the line with content "ExecStart=/bin/bash -c 'sunshine'", Uncommenting mean removing "#" from the begining of line and commenting means adding "#" at the begining of line.
 
-A. if sunshine is system package for bazzite, fedora atomic, nobara deck/htpc, cachyos-handheld edition user
+A. if sunshine is a system package for bazzite, fedora atomic, nobara deck/htpc, cachyos-handheld edition user
 
 [Unit]
 Description=Sunshine only in Game Mode
@@ -47,7 +46,6 @@ After=graphical-session.target
 
 [Service]
 Type=simple
-#ExecStart=/bin/bash -c 'sleep 10 && sunshine'
 ExecStart=/bin/bash -c 'sunshine'
 Restart=on-failure
 ExecCondition=/bin/bash -c '[ "$XDG_SESSION_DESKTOP" = "gamescope" ]'
@@ -55,7 +53,7 @@ ExecCondition=/bin/bash -c '[ "$XDG_SESSION_DESKTOP" = "gamescope" ]'
 [Install]
 WantedBy=graphical-session.target
 
-B. If sunshine is flatpak
+B. If sunshine is flatpak for SteamOS, Chimera-OS user
 
 [Unit]
 Description=Sunshine only in Game Mode
