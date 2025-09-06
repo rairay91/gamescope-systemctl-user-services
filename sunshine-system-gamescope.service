@@ -1,0 +1,12 @@
+[Unit]
+Description=Launch Sunshine in Game Mode
+After=graphical-session.target
+
+[Service]
+Type=simple
+ExecStart=/bin/bash -c 'sunshine'
+Restart=on-failure
+ExecCondition=/bin/bash -c '[ "$XDG_SESSION_DESKTOP" = "gamescope" ]'
+
+[Install]
+WantedBy=graphical-session.target

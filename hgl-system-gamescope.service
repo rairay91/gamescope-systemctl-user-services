@@ -1,0 +1,12 @@
+[Unit]
+Description=Launch Heroic Games Launcher in Game Mode
+After=graphical-session.target
+
+[Service]
+Type=simple
+ExecStart=/bin/bash -c 'heroic'
+Restart=on-failure
+ExecCondition=/bin/bash -c '[ "$XDG_SESSION_DESKTOP" = "gamescope" ]'
+
+[Install]
+WantedBy=graphical-session.target
