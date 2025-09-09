@@ -5,7 +5,7 @@ I have tested thhis on CachyOS Handheld edition, Nobara Deck/HTPC edition, Bazzi
 
 -> First install sunshine/heroic-games-launcher and configure it and test it if it is working from desktop mode.
 
--> If it is working in desktop mode switch back to steam game mode and press Ctrl+Alt+F3 or Ctrl+Alt+F2 or Ctrl+Alt+F1 on keyboard to enter tty3 or tty2 or tty1 terminal and login with your username and password. And type command shown in this file on your terminal https://github.com/rairay91/gamescope-systemctl-user-services/blob/main/whoami.txt
+-> If it is working in desktop mode switch back to steam game mode and press Ctrl+Alt+F3 or Ctrl+Alt+F2 or Ctrl+Alt+F1 on keyboard to enter tty3 or tty2 or tty1 terminal and login with your username and password. And type command in this file on your terminal https://github.com/rairay91/gamescope-systemctl-user-services/blob/main/whoami.txt
 
 -> It should give output something like this(notice Desktop=gamescope)
 Id=1
