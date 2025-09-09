@@ -5,7 +5,7 @@ I have tested thhis on CachyOS Handheld edition, Nobara Deck/HTPC edition, Bazzi
 
 -> First install sunshine/heroic-games-launcher and configure it and test it if it is working from desktop mode.
 
--> If it is working in desktop mode switch back to steam game mode and press Ctrl+Alt+F3 or Ctrl+Alt+F2 or Ctrl+Alt+F1 on keyboard to enter tty3 or tty2 or tty1 terminal and login with your username and password. Now type this command(without double qoute) in the terminal and press enter(replace (user) with your username) "loginctl show-session $(loginctl | grep $(whoami) | awk '{print $1}') -p Type -p Desktop -p Id" It should show gamescope in this line "Desktop=gamescope".
+-> If it is working in desktop mode switch back to steam game mode and press Ctrl+Alt+F3 or Ctrl+Alt+F2 or Ctrl+Alt+F1 on keyboard to enter tty3 or tty2 or tty1 terminal and login with your username and password. And follow this instruction https://github.com/rairay91/gamescope-systemctl-user-services/blob/main/whoami.txt
 
 -> Now switch back to desktop mode open this directory in any file manager "/home/(user)/.config/systemd/user/" where (user) is your username, if systemd/user does not exist create it first.
 
