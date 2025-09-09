@@ -1,0 +1,24 @@
+loginctl show-session $(loginctl | grep $(whoami) | awk '{print $1}') -p Type -p Desktop -p Id
+
+
+
+
+
+Id=1
+Desktop=gamescope
+Type=wayland
+
+Id=2
+Desktop=
+Type=unspecified
+
+
+
+
+Id=1
+Desktop=KDE
+Type=wayland
+
+Id=2
+Desktop=
+Type=unspecified
