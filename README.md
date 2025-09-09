@@ -8,13 +8,19 @@ I have tested thhis on CachyOS Handheld edition, Nobara Deck/HTPC edition, Bazzi
 -> If it is working in desktop mode switch back to steam game mode and press Ctrl+Alt+F3 or Ctrl+Alt+F2 or Ctrl+Alt+F1 on keyboard to enter tty3 or tty2 or tty1 terminal and login with your username and password. And type command in this file on your terminal https://github.com/rairay91/gamescope-systemctl-user-services/blob/main/whoami.txt
 
 -> It should give output something like this(notice Desktop=gamescope)
+
 Id=1
+
 Desktop=gamescope
+
 Type=wayland
 
 Id=2
+
 Desktop=
+
 Type=unspecified
+
 
 -> Now switch back to desktop mode open this directory in any file manager "/home/(user)/.config/systemd/user/" where (user) is your username, if systemd/user does not exist create it first.
 
