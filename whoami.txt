@@ -1,9 +1,10 @@
+In terminal type following command=>
 loginctl show-session $(loginctl | grep $(whoami) | awk '{print $1}') -p Type -p Desktop -p Id
 
 
 
 
-
+On terminal you will see this output=>
 Id=1
 Desktop=gamescope
 Type=wayland
@@ -15,6 +16,7 @@ Type=unspecified
 
 
 
+Or probably this output=>
 Id=1
 Desktop=KDE
 Type=wayland
