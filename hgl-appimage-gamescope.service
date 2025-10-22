@@ -1,0 +1,12 @@
+[Unit]
+Description=Launch Heroic Games Launcher (AppImage) in Game Mode
+After=graphical-session.target
+
+[Service]
+Type=simple
+ExecStart=/bin/bash -c 'env DESKTOPINTEGRATION=1 /home/sunil/AppImages/heroic_games_launcher.appimage --no-sandbox'
+Restart=on-failure
+ExecCondition=/bin/bash -c '[ "$XDG_SESSION_DESKTOP" = "gamescope" ]'
+
+[Install]
+WantedBy=graphical-session.target
